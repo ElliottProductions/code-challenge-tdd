@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 import { 
     addExclamationPoints, multiplyBySeven, multiplyBy12ThenHalve, returnAsAnArray,
-    returnAsAString, makeLuckyGreeting, getSecondItem, getLastItem,
+    returnAsAString, makeLuckyGreeting, getSecondItem, getLastItem, getRandomNumber,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
@@ -32,7 +32,7 @@ test('multiplyBySeven', (expect) => {
     expect.equal(actual, expected);
 });
 
-test('this test multiplyBySeven', (expect) => {
+test('multiplyBySeven2', (expect) => {
     const expected = 21;
 
     const actual = multiplyBySeven(3);
@@ -86,6 +86,13 @@ test('this test getLastItem', (expect) => {
     const actual = getLastItem(['kiwi', 'apple', 'orange', 'plum']);
 
     expect.equal(actual, expected);
+});
+
+test('this test getRandomNumber', (expect) => {
+
+    const answer = getRandomNumber();
+
+    expect.equal(typeof answer, 'number');
 });
 
 
