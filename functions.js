@@ -12,8 +12,8 @@ Output:
 
 */
 
-export function addExclamationPoints() {
-    return true;
+export function addExclamationPoints(unExclaimed) {
+    return unExclaimed + '!!!';
 }
 
 // This function should take in a number and multiply it by seven
@@ -29,11 +29,13 @@ Output:
 */
 
 export function multiplyBySeven(num) {
-    return true;
+    return num * 7;
 }
 
 // This function should take in a number and multiply it by twelve then cut the result in half
-
+export function multiplyBy12ThenHalve(num) {
+    return (num * 12)/2;
+}
 /* 
 Input:
 
@@ -45,9 +47,6 @@ Output:
 
 */
 
-export function multiplyBy12ThenHalve(num) {
-    return true;
-}
 
 
 // This function should take in three numbers, divide the first by the second, then multiply the result by the third
@@ -63,7 +62,7 @@ Output:
 */
 
 export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return (firstNumber / secondNumber) * thirdNumber;
 }
 
 
