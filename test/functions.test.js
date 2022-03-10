@@ -207,4 +207,19 @@ test('this delivers a random number', (expect) => {
     expect.equal(typeof answer, 'number');
 });
 
+test('this delivers a random number2', (expect) => {
+
+    const answer = getRandomNumber();
+
+    expect.equal(typeof answer, 'number');
+});
+
+test('this delivers a random number3', (expect) => {
+
+    const answer = getRandomNumber();
+
+    expect.equal(typeof answer, 'number');
+});
+
+
 
