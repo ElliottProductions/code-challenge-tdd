@@ -12,8 +12,8 @@ Output:
 
 */
 
-export function addExclamationPoints() {
-    return true;
+export function addExclamationPoints(unExclaimed) {
+    return unExclaimed + '!!!';
 }
 
 // This function should take in a number and multiply it by seven
@@ -29,11 +29,13 @@ Output:
 */
 
 export function multiplyBySeven(num) {
-    return true;
+    return num * 7;
 }
 
 // This function should take in a number and multiply it by twelve then cut the result in half
-
+export function multiplyBy12ThenHalve(num) {
+    return (num * 12)/2;
+}
 /* 
 Input:
 
@@ -45,9 +47,6 @@ Output:
 
 */
 
-export function multiplyBy12ThenHalve(num) {
-    return true;
-}
 
 
 // This function should take in three numbers, divide the first by the second, then multiply the result by the third
@@ -63,7 +62,7 @@ Output:
 */
 
 export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return (firstNumber / secondNumber) * thirdNumber;
 }
 
 
@@ -80,7 +79,7 @@ Output:
 */
 
 export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return [firstNumber, secondNumber, thirdNumber];
 }
 
 // This function should take in three numbers and return those numbers mushed together as a string
@@ -96,7 +95,7 @@ Output:
 */
 
 export function returnAsAString(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return `${firstNumber}${secondNumber}${thirdNumber}`;
 }
 
 // This function should take in two numbers and return a greeting announcing that the sum of those numbers is today's lucky number
@@ -112,7 +111,8 @@ Output:
 */
 
 export function makeLuckyGreeting(firstNumber, secondNumber) {
-    return true;
+    let luckyNum = firstNumber + secondNumber;
+    return `Hello! Your lucky number for the day is ${luckyNum}.`;
 }
 
 // This function should take an array and return the second item in the array
@@ -129,7 +129,7 @@ Output:
 */
 
 export function getSecondItem(array) {
-    return true;
+    return array[1];
 }
 
 // This function should take an array and return the LAST item in the array, no matter the array's length
@@ -146,7 +146,7 @@ Output:
 */
 
 export function getLastItem(array) {
-    return true;
+    return array[array.length - 1];
 }
 
 // This function should return a random number between 0 and 5. 
@@ -156,5 +156,5 @@ export function getLastItem(array) {
 // Ask yourself: even if you cannot predict the result exactly, what _do_ you know about what it should return? Use that expectation to write your test
 
 export function getRandomNumber() {
-    return true;
+    return Math.floor(Math.random() * 5);
 }
