@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 import { 
     addExclamationPoints, multiplyBySeven, multiplyBy12ThenHalve, returnAsAnArray,
-    returnAsAString, makeLuckyGreeting, getSecondItem, getLastItem, getRandomNumber,
+    returnAsAString, makeLuckyGreeting, getSecondItem, getLastItem, getRandomNumber, divideThenMultiply,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
@@ -79,6 +79,40 @@ test('this mlutiplies by 12 then divides in half', (expect) => {
 
     expect.equal(actual, expected);
 });
+
+test('this mlutiplies by 12 then divides in half', (expect) => {
+    const expected = 66;
+
+    const actual = multiplyBy12ThenHalve(11);
+
+    expect.equal(actual, expected);
+});
+
+test('this function divides then multiplies', (expect) => {
+    const expected = 10;
+
+    const actual = divideThenMultiply(8, 4, 5);
+
+    expect.equal(actual, expected);
+});
+
+test('this function divides then multiplies2', (expect) => {
+    const expected = 25;
+
+    const actual = divideThenMultiply(20, 4, 5);
+
+    expect.equal(actual, expected);
+});
+
+test('this function divides then multiplies3', (expect) => {
+    const expected = 20;
+
+    const actual = divideThenMultiply(40, 4, 2);
+
+    expect.equal(actual, expected);
+});
+
+
 
 test('this test returnAsAnArray', (expect) => {
     const expected = [8, 4, 5];
